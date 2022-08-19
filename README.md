@@ -7,13 +7,13 @@
 - [x] Introduction to HTML; Text, lists and links. 
 - [x] Authentication and Authorization. 
 - [x] CSS
-  - [x] JavaScript(Object-oriented programming) 
-  - [x] NodeJS 
-  - [x] Flask Framework web. 
-  - [x] Python 
+- [x] JavaScript(Object-oriented programming) 
+- [x] NodeJS 
+- [x] Flask Framework web. 
+- [x] Python 
 - [x] RESTful API.
-  - [x] Database Functions. 
-  - [x] Asynchronous requests 
+- [x] Database Functions. 
+- [x] Asynchronous requests 
 - [x] Search Engine Optimization. 
 - [x] Bootstrap
 
