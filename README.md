@@ -17,4 +17,8 @@
 - [x] Search Engine Optimization. [Docs]()
 - [x] Bootstrap
 
-## Documentation
+
+## How it works
+
+During the IV programming course, students are given skills that enable them to solidly learn the development of web applications, contrasting front-end and back-end, allowing them to learn other tools later on, such as frameworks and libraries for increasingly sophisticated applications.
+
