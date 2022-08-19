@@ -6,16 +6,16 @@
 
 - [x] HTML
 - [x] CSS
-- [x] Authentication and Authorization. 
+- [x] Bootstrap (Framework front-end)
 - [x] JavaScript(Object-oriented programming) 
 - [x] NodeJS 
+- [x] Authentication and Authorization. 
 - [x] Flask Framework web. 
 - [x] Python 
 - [x] RESTful API.
 - [x] Database Functions. 
 - [x] Asynchronous requests 
 - [x] Search Engine Optimization. 
-- [x] Bootstrap (Framework front-end)
 
 
 ## How it works
