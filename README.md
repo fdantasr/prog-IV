@@ -4,17 +4,17 @@
 
 [Programming IV]() is an code repository for Programming (IV) classes of the computer science course. The purpose of this repository is to help students with the essentials of learning web development.
 
-- [x] Introduction to HTML; Text, lists and links. [Docs]()
-- [x] Authentication and Authorization. [Docs]()
+- [x] Introduction to HTML; Text, lists and links. 
+- [x] Authentication and Authorization. 
 - [x] CSS
-  - [x] JavaScript(Object-oriented programming) [Docs]()
-  - [x] NodeJS [Docs]()
-  - [x] Flask Framework web. [Docs]()
-  - [x] Python [Docs]()
+  - [x] JavaScript(Object-oriented programming) 
+  - [x] NodeJS 
+  - [x] Flask Framework web. 
+  - [x] Python 
 - [x] RESTful API.
-  - [x] Database Functions. [Docs]()
-  - [x] Asynchronous requests [Docs]()
-- [x] Search Engine Optimization. [Docs]()
+  - [x] Database Functions. 
+  - [x] Asynchronous requests 
+- [x] Search Engine Optimization. 
 - [x] Bootstrap
 
 
