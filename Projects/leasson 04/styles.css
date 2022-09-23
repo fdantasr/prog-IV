@@ -1,6 +1,95 @@
-ul{
-    list-style-image: url('images/favicon-16x16.png');
-   
+ul {
+    /*list-style-image: url('images/favicon-16x16.png');*/
+    font-size: 14px;
+
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(65, 65, 65);
+    ;
 
+}
+
+.container {
+    background-color: #86868610;
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px dotted red;*/
+    padding: 10px 10px 10px 10px;
+}
+
+.button {
+    background-color: rgb(65, 184, 101);
+    border-radius: 4px;
+    height: 25px;
+    color: #fff;
+}
+
+.box2 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+}
+
+.title {
+    color: rgb(65, 65, 65);
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Alinha o form ao início*/
+form {
+    padding-top: 30px;
+
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+table {
+    background-color: rgba(106, 106, 255, 0.247);
+    list-style: none;
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid;
+    font-size: 14px;
+    border-color: #fff;
+}
+
+.title-tab {
+    color: #fff;
+    background-color: rgba(106, 106, 255, 0.664);
+    font-weight: bold
+}
+
+td {
+    height: 30px;
+}
+.one{
+    font-weight: bold;
+}
+/*tr:nth-child(even){
+    background-color: blue;
+}*/
+/*tfoot:nth-child(even){
+    background-color: #134;
+}*/
+.alinha-table {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
