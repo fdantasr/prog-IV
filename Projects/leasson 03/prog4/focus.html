@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)http://www.htmlandcssbook.com/code-samples/chapter-12/hover-active-focus.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Hover Active Focus</title>
+		<style type="text/css">
+		/* botão original: verde; */
+		/* botão ao passar o mouse: azul e sublinhado */
+		/* botão ao clicar: verde escuro */
+		/*cor do texto: branco*/
+		/*cor do texto quando passa o mouse: cinza*/
+			.submit{
+				background-color: green;
+			}
+			input {
+				padding: 6px 12px 6px 12px;
+				border: 1px solid #665544;
+			}
+			input.submit:hover {
+				background-color: blue;
+				text-decoration: underline;
+			}
+			input.submit:active {
+				background-color: darkgreen;}
+			input.text {
+				color: white;}
+			input.text:focus {
+				color: gray;}
+		</style>
+	</head>
+	<body>
+		<form>
+			<input type="text" class="text" value="Enter email address...">
+			<input type="submit" class="submit">
+		</form>
+
+</body></html>

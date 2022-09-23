@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7872dcc455.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!--Biblioteca-->
+    <!--- <link rel="stylesheet" href="fontawesome/css/all.min.css"> -->
+
+    <title>Atividade 02 - Módulo 2</title>
+</head>
+
+<body>
+    <div id="box">
+        <!--Implementando Lista-->
+
+        <div class="introduction">
+            <h1>Poetry Workshop</h1>
+            <p>We will be conducting a number of poetry workshops and symposiums throughout the year. <br>
+                Please note that the following events are free to members:
+            </p>
+
+            <ul class="list">
+                <li class="itens"> A Poetic Perspective</li>
+                <li class="itens">Walt Whitman at war</li>
+                <li class="itens">Found Poems and Outsider Poetry</li>
+                <ul />
+        </div>
+
+        <!--Implementando Tabela-->
+
+        <table class="tabela" border="1">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>New York</th>
+                    <th>Chicago</th>
+                    <th>San Francisco</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Body1 linha1</td>
+                    <td>Body2 linha1</td>
+                    <td>Body3 linha1</td>
+                    <td>Body4 linha1</td>
+
+                </tr>
+                <tr>
+                    <td>Body1 linha2</td>
+                    <td>Body2 linha2</td>
+                    <td>Body3 linha2</td>
+                    <td>Body4 linha2</td>
+                </tr>
+                <tr>
+                    <td>Body1 linha3</td>
+                    <td>Body2 linha3</td>
+                    <td>Body3 linha3</td>
+                    <td>Body4 linha3</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <td>Foot 1</td>
+                <td>Foot 2</td>
+                <td>Foot 3</td>
+                <td>Foot 4</td>
+            </tfoot>
+        </table>
+
+        <!--Implementando Form-->
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Register your Interest:</legend>
+                <label for="fname">Your name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Your Email:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+
+
+                <div class="options">
+                    <label for="fname">Your closest center:</label>
+                    <select name="select">
+                        <option value="valor1">New York</option>
+                        <option value="valor2" selected>Chicago</option>
+                        <option value="valor3">San Francisco</option>
+                    </select>
+                </div>
+
+                <br>
+                <div class=radios>
+                    <label for="fname">Are you a member?</label>
+                    <input type="radio" name="opcao1" value="op1"> Yes
+                    <input type="radio" name="opcao2" value="op1"> No
+                </div>
+
+            </fieldset>
+              <!--Botão-->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
