@@ -1,0 +1,28 @@
+.horario tr td{
+    border: 1px solid;
+}
+.horario table{
+    border: 1px solid;
+    cursor: default;
+}
+.horario th{
+    border: 1px solid;
+}
+.tabela_geral{
+    background-color: white;
+    margin: 50px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid;
+    border-color: white;
+}
+fieldset{
+    padding: 5px;
+}
+input[type="name"] {
+    width: 430px;
+}
+.esp{
+    width: 30px;
+}

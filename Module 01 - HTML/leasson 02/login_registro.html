@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/head.css">
+    <link rel="stylesheet" href="CSS/login_registro.css">
+    <title>Login Registro</title>
+</head>
+<body>
+    
+    <ul class="tabela_geral">
+        <fieldset><legend>Formulário de Cadastro</legend>
+            <fieldset>
+                <table><legend>Dados Pessoais</legend>
+                    <tr>
+                        <td>Nome Completo</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><input type="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                    </tr>
+                    <tr>
+                        <td><input type="email"></td>
+                        <td class="esp" rowspan="3"></td>
+                        <td>Data de Nascimento
+                            <td><input type="date" name="depart" id="data"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cidade</td>
+                    </tr>
+                    <tr>
+                        <td><input type="town"></td>
+                        <td>Estado
+                            <select name="Estado">
+                                <option value="defalt"></option>
+                                <option value="GO">GO</option>
+                                <option value="MT">MT</option>
+                                <option value="SP">SP</option>
+                                <option value="BA">BA</option>
+                            </select>
+                        </td>
+                        <td>Sexo:
+                            <input type="radio" id="Male" name="gender" value="m">
+                            <label for="female">Masc.</label>
+                            <input type="radio" id="Female" name="gender" value="f">
+                            <label for="female">Fem.</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br><br>
+            <fieldset><legend>Informações acadêmicas</legend>
+                <table>
+                    <tr>
+                        <td>RGA</td>
+                    </tr>
+                    <tr>
+                        <td><input type="rga" required="required"></td>
+                    </tr>
+                    <tr><td><br></td></tr>
+                    <tr>
+                        <td>Disciplinas do curso já realizadas(se aprovado)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="esp">Estrutura de dados 1
+                            <input type="checkbox" class="esp">Estrutura de dados 2
+                            <input type="checkbox" class="esp">Programação 2
+                            <input type="checkbox" class="esp">Programação 3
+                        </td>
+                    </tr>
+                    <tr><td><br></td></tr>
+                    <tr>
+                        <td>Horários reservados para aulas sincronas:</td>
+                    </tr>
+                    
+                </table>
+                <ul class="horario">
+                    <table >
+                        <tr>
+                            <td></td>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                        </tr>
+                        <tr>
+                            <td>07:30 às 09:30</td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>09:30 às 11:30</td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>13:30 às 15:30</td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>15:30 às 17:30</td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                    </table>
+                </ul>
+            </fieldset>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </ul>
+</body>
+</html>
