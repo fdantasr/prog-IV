@@ -19,7 +19,7 @@
 - [x] User authentication (Sessions and Cookies).
 
 ### Modules
-> The course is divided into ***3 modules***.
+> The course is divided into ***4 modules***.
 ```
 Module 01 - HTML
 
