@@ -1,0 +1,1 @@
+#### Introduction to JavaScript; Variables, functions, arrays and scope.
