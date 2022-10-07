@@ -2,7 +2,7 @@
 
 ### Programming IV - Web Applications
 
-[Programming IV]() is an code repository for Programming (IV) classes of the computer science course. The purpose of this repository is to help students with the essentials of learning web development.
+[Programming IV]() is an code repository for ***Programming (IV)*** classes of the ***computer science*** course. The purpose of this repository is to help students with the essentials of learning web development.
 
 - [x] HTML
 - [x] CSS
@@ -19,7 +19,7 @@
 - [x] User authentication (Sessions and Cookies).
 
 ### Modules
-The course is divided into 3 modules.
+> The course is divided into ***3 modules***.
 ```
 Module 01 - HTML
 
