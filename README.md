@@ -22,14 +22,11 @@
 The course is divided into 3 modules.
 ```
 Module 01 - HTML
-```
-```
+
 Module 02 - CSS
- ```
- ```
+
 Module 03 - JavaScript
-```
-```
+
 Module 04 - Flask, Database, NodeJS, API
 ```
 
