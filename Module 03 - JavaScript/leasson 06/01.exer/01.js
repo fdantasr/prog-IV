@@ -11,4 +11,4 @@ c = c%b; //Módulo
 
 console.log("Soma: ", soma);
 console.log("Divisão: ", div);
-console.log("Resto de C e B", c);
+console.log("Resto de C e B: ", c);
