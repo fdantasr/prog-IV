@@ -9,6 +9,7 @@
 - [x] Bootstrap (Framework front-end)
 - [x] JavaScript(Object-oriented programming) 
 - [x] NodeJS 
+- [x] JSON (JavaScript Object Notation)
 - [x] Authentication and Authorization. 
 - [x] Flask Framework web. 
 - [x] Python 
