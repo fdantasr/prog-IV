@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+
+.text {
+    font-family: 'MuseoModerno', cursive;
+    color: black;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#container {
+    margin-top: 20px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.products,
+.show-price {
+    background-color: #f6f7f8;
+    margin-right: 20px;
+    padding: 10px;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.show-price {
+    background-color: #2bb24c;
+}
+
+#compra {
+    margin-bottom: 15px;
+    height: 30px;
+
+}
+
+#button,
+.button {
+    border-radius: 1px;
+}
+
+.total-price {
+    margin-top: 75%;
+    padding:5px;
+    background-color: aliceblue;
+   
+
+}
+.image{
+    width: 300px;
+}
+.teste{
+    overflow: scroll;
+    position: absolute;
+    width: 35%;
+    height: 35%;
+}
+.teste::-webkit-scrollbar{
+    display: none;
+}
+ul{
+    list-style: none;
+}

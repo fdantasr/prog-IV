@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Loja de Games</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="products">
+            <div class="text">Compre seus <font color="#2bb24c">Jogos</font></div>
+            <br>
+            <select name="select" id="compra">
+                <option value="" selected></option>
+                <option value="400,00">Minecraft - R$400,00</option>
+                <option value="150,00">League Of Legendes - R$150,00</option>
+                <option value="149">Call of Duty Warzone - R$149 anual</option>
+                <option value="346">Zelda - R$346,00</option>
+                <option value="50">Fogaréu Grátis - R$50,00</option>
+            </select>
+            <div id="button"><input type="submit" value="Adicionar" class="button"></div>
+            <figure>
+                <img class="image" src="imagem.svg" alt="Minha Figura">
+              </figure>
+        </div>
+
+        <div class="show-price">
+            <div class="text">Carrinho</div>
+          <div class="teste">
+            <ul></ul>
+        </div>
+            <br>
+            <div class="total-price"><span>Total: R$</span><span id="result">0.00</span></div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
