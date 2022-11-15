@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %} Meus Produtos à Venda
+{% endblock %}
+{% block content %}
+<div class="logo">
+    <i class="bx bx-menu menu-icon"></i>
+    <!--Adiciona o ícone do menu ao lado do Span-->
+    {% block pageindicator %}Meus Produtos{% endblock %}
+    <!--Icon imrpotado do boxicons-->
+</div>
+
+<div class="container-prods">
+    <br>
+    <div>
+        <h2 class="text-blue-700 text-2xl font-semibold my-4 cadh2">Pesquise seus Produtos</h2>
+        <div class="flex justify-center">
+            <div class="mb-3 xl:w-96">
+                <div class="input-group relative flex flex-wrap items-stretch w-full mb-4">
+                    <input type="text" id="buscartxt"
+                        class="form-control mb-2 relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="Busque por Nome, Valor ou Marca" aria-label="Search"
+                        aria-describedby="button-addon2">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col">
+            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                    <div class="overflow-hidden">
+                        <table class="min-w-full">
+                            <thead class="border-b">
+                                <tr>
+                                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                        ID 
+                                    </th>
+                                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                        Nome
+                                    </th>
+                                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                        Marca
+                                    </th>
+                                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                        Valor
+                                    </th>
+                                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                        Favoritados
+                                    </th>
+                                </tr>
+                            </thead>
+
+
+                            <tbody id="body">
+                                {% for row in list %}
+
+                                <tr class="border-b">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#</td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        {{row.name_prod}}
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        {{row.marca}}
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        {{row.value}}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--@Copyright Script for table - https://github.com/WesleyDev184-->
+
+<script>
+    let tbody = document.getElementById("body");
+    let busca = document.getElementById("buscartxt")
+
+    busca.addEventListener("keyup", () => {
+        let expressao = busca.value.toLowerCase();
+
+        let linhas = tbody.getElementsByTagName('tr');
+       
+
+        for (let posicao in linhas) {
+            if (true === isNaN(posicao)) {
+                continue;
+            }
+            let conteudpDalinha = linhas[posicao].innerHTML.toLocaleLowerCase();
+            if (true === conteudpDalinha.includes(expressao)) {
+                linhas[posicao].style.display = '';
+            } else {
+                linhas[posicao].style.display = 'none';
+            }
+        }
+    })
+</script>
+{% endblock %}

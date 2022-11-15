@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %} Cadastre seu Produto
+{% endblock %}
+{% block content %}
+<script src="https://cdn.tailwindcss.com"></script>
+<div class="logo">
+    <i class="bx bx-menu menu-icon"></i>
+    <!--Adiciona o ícone do menu ao lado do Span-->
+    {% block pageindicator %}Cadastrar{% endblock %}
+    <!--Icon imrpotado do boxicons-->
+</div>
+<div class="flex justify-center items-center h-screen bg-slate-200">
+    <div id="form" class="block bg-slate-50 p-6 rounded-xl shodow-md shadow-slate-300 w-90">
+        <form action="/form" method="post">
+            <h2 class="text-blue-700 text-3xl font-semibold my-4">Novo Produto</h2>
+          
+            <div id="fullName" class="flex flex-row">
+              
+                <div id="nome" class="w-1/2 mr-1">
+                    <label for="text" class="text-sm">Nome do Produto</label><br>
+                    <input type="text" name="nome_prod" id="nome_prod"
+                        class="h-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm">
+                </div>
+              
+
+                <div id="valor" class="w-1/2 mr-1">
+                    <label for="number" class="text-sm">Valor</label><br>
+                    <input type="text" name="value_prod" id="value_prod"
+                        class="h-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm">
+                </div>
+            </div>
+
+            <!-- Marca-->
+            <label for="marca" class="text-sm">Marca/Origem</label><br>
+            <input type="name" name="marca_prod" id="marca_prod"
+                class="h-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm">
+    
+            <div id="gender" class="text-sm mb-2">
+                <p class="mt-2">Estado do Produto</p>
+                <input type="radio" name="gender" id="male" class="text-sm mx-1" checked><label for="male">Novo</label>
+                <input type="radio" name="gender" id="female" class="text-sm mx-1"><label for="female">SemiNovo</label>
+                <input type="radio" name="gender" id="other" class="text-sm mx-1"><label for="other">Usado</label>
+            </div>
+
+            <!-- Sign up / submit button -->
+            <input type="submit" name="" id="signUp"
+                class="bg-blue-700 w-full h-10 cursor-pointer text-white rounded-md hover:bg-blue-600 hover:outline outline-2 outline-blue-600 outline-offset-2 text-sm"><br>
+            <p class="text-xs my-2">Não está conseguindo cadastrar? <a href="#" class="text-blue-600">Suporte</a></p>
+        </form>
+    </div>
+</div>
+{% endblock %}

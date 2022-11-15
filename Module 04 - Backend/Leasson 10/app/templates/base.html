@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   <title> {% block title %}
+    {% endblock %}</title>
+</head>
+
+<body>
+    <nav> <!--Tag de Navegação com links para outras rotas - Tag Semântica-->
+        <div class="logo">
+            <i class="bx bx-menu menu-icon"></i> <!--Adiciona o ícone do menu ao lado do Span-->
+           <span class="logo-name"> {% block pageindicator %}{% endblock %}</span> <!--Icon imrpotado do boxicons-->
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <i class="bx bx-menu menu-icon"></i>
+                <span class="logo-name">Garage Sale</span>
+            </div>
+
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <a href="index" class="nav-link">
+                            <i class='bx bx-planet icon'></i>
+                            <span class="link">Visão Geral</span>
+                        </a>
+                    </li>
+        
+                    <li class="list">
+                        <a href="cadastro.html" class="nav-link">
+                            <i class='bx bx-cart icon'></i>
+                            <span class="link">Cadastrar</span>
+                        </a>
+                    </li>
+        
+                    <li class="list">
+                        <a href="showdata.html" class="nav-link">
+                            <i class='bx bx-box icon' ></i>
+                            <span class="link">Meus Produtos</span>
+                        </a>
+                    </li>
+                    
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class="bx bx-heart icon"></i>
+                            <span class="link">Favoritos</span>
+                        </a>
+                    </li>
+
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class="bx bx-message-rounded icon"></i>
+                            <span class="link">Compradores</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="bottom-cotent">
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class="bx bx-cog icon"></i>
+                            <span class="link">Configurações</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class="bx bx-log-out icon"></i>
+                            <span class="link">Logout</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Diretiva que define os trechos de código nos outros arquivos-->
+    {% block content %}
+    {% endblock %}
+    <footer class="bg-gray-100 text-center">
+        <div class="px-6 pt-6">
+          <form action="">
+            <div class="grid md:grid-cols-3 gird-cols-1 gap-4 flex justify-center items-center">
+              <div class="md:ml-auto md:mb-6">
+                <p class="text-gray-800">
+                  <strong>Receba Atualizações</strong>
+                </p>
+              </div>
+      
+              <div class="md:mb-6">
+                <input
+                  type="text"
+                  class="
+                    form-control
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                  "
+                  id="exampleFormControlInput1"
+                  placeholder="Endereço de Email"/>
+              </div>
+      
+              <div class="md:mr-auto mb-6">
+                <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      
+        <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright: 
+          <a class="text-gray-800" href="https://tailwind-elements.com/">Felipe Dantas</a>
+        </div>
+      </footer>
+
+</body>
+<script>
+    const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
+
+    menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+            navBar.classList.toggle("open");
+        });
+    });
+
+    overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+    });
+
+</script>
+</html>
