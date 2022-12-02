@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block pokelist %}
+{% for poke in pokemons %}
+
+<div class="pokemon" data-name={{poke['name']}} data-type={{ poke['type'] }} tabindex={{ poke['id'] }}>
+  <figure class="pokemon-figure">
+    <img src={{url_for('static', filename='img/' + poke['name']|lower +'.png')}} alt={{poke['name']}}>
+  </figure>
+  <section class="pokemon-description">
+    <span class="pokemon-id">#{{poke['id']}}</span>
+    <h1 class="pokemon-name">{{poke['name']}}</h1>
+    <div class="pokemon-types">
+      {%for type in poke['type']%}
+        <span class="pokemon-type background-{{type}}">{{type}}</span>
+      {%endfor%}
+    </div>
+  </section>
+  <section class="pokemon-stats">
+    <div class="stat-row">
+      <div>hp</div>
+      <div class="stat-bar">
+        <div class="stat-bar-bg" style="width: {{poke['stats']['hp']/2.5}}%">{{poke['stats']['hp']}}</div>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div>attack</div>
+      <div class="stat-bar">
+        <div class="stat-bar-bg" style="width: {{poke['stats']['attack']/2.5}}%">{{poke['stats']['attack']}}</div>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div>defense</div>
+      <div class="stat-bar">
+        <div class="stat-bar-bg" style="width: {{poke['stats']['defense']/2.5}}%">{{poke['stats']['defense']}}</div>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div>sp-atk</div>
+      <div class="stat-bar">
+        <div class="stat-bar-bg" style="width: {{poke['stats']['sp-atk']/2.5}}%">{{poke['stats']['sp-atk']}}</div>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div>sp-def</div>
+      <div class="stat-bar">
+        <div class="stat-bar-bg" style="width: {{poke['stats']['sp-def']/2.5}}%">{{poke['stats']['sp-def']}}</div>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div>speed</div>
+      <div class="stat-bar">
+        <div class="stat-bar-bg" style="width: {{poke['stats']['speed']/2.5}}%">{{poke['stats']['speed']}}</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% endfor %}
+{% endblock %}

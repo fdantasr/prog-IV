@@ -1,0 +1,23 @@
+{% import "bootstrap/wtf.html" as wtf %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href={{url_for('static', filename='style.css')}}>
+</head>
+<body>
+  <header>
+    <h1>Pokedex</h1>
+  </header>
+  <main>
+    {{ wtf.quick_form(form, extra_classes='pokedex-control') }}
+    <section class="pokedex">
+      {% block pokelist %}
+      {% endblock %}
+    </section>
+  </main>
+</body>
+</html>

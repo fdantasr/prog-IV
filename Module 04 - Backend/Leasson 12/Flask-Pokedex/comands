@@ -1,0 +1,2 @@
+python -m venv tutorial-env - Cria um ambiente virtual
+tutorial-env\Scripts\Activate
