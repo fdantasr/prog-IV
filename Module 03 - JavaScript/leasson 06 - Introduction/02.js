@@ -16,9 +16,16 @@ v3[0] = 7;
 v3[1] = 8;
 v3[2] = 9;
 
-let v4  = [v1, v2, v3]; //EXTERNO
+let v4 = [v1, v2, v3]; //EXTERNO
+v3.push(10); //Adiciona outro valor/posição ao vetor v3[3] = 10
+//const removido = v3.pop(); - Remove um índice e o elemento do final
+//const removido = v3.shift(); - Remove um elemento do final
+//v3.unshift(70); - Adiciona outro valor no início do array trocando os índices
+//delete v3[1] - Deixa o indice com o valor vazio
+//console.log(v3.slice(0,) mostra os elementos de um ponto a outro do array
 
 for (let i = 0; i < v4.length; i++) {
+    console.log(v4); //Aarray de Arrays contendo os 3 vetores anteriores
     console.log(v4[i]);
-    
+
 }

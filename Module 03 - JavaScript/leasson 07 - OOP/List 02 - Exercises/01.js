@@ -3,13 +3,15 @@ segunda função que exiba na tela a mensagem ’Tudo bem?’. Garanta que uma v
 a função e mostre a mensagem ’Tudo bem?’ a partir de a. Realize uma invocação da função
 mensagem de maneira que ela mostre as duas mensagens que estão dentro dela.*/
 
+//Função do tipo exmpressão/Função Anônima
+
 /*var mostramensagem = function() {
     return something;
-}* Função do tipo exmpressão*/
+};*/
 
-// mostramensagem()
 
-function mensagem() { //Função do tipo declaração
+//Função do tipo declaração
+function mensagem() { 
     alert('Hello!');
     return function () {
         alert('Are you ok?');
