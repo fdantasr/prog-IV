@@ -37,11 +37,11 @@ conta1.sacar(100);
 console.log(conta1);
 
 function ContaCorrente(agencia, conta, saldo, limite) {
-  //A função call permite que você chame uma função definida em um objeto emprestado (Herança)
+  
   Conta.call(this, agencia, conta, saldo);
   this.limite = limite;
 }
-//Essas duas linhas estão configurando ContaCorrente para herdar de Conta, permitindo que instâncias de ContaCorrente usem propriedades e métodos definidos em Conta, ao mesmo tempo que mantêm a propriedade constructor correta.
+
 ContaCorrente.prototype = Object.create(Conta.prototype);
 ContaCorrente.prototype.constructor = ContaCorrente;
 
@@ -66,8 +66,5 @@ ContaPoupanca.prototype = Object.create(Conta.prototype);
 ContaPoupanca.prototype.constructor = ContaPoupanca;
 
 const contaPoupanca = new ContaPoupanca(12, 33, 0);
-
-
-
 
 export default 1;
