@@ -29,6 +29,14 @@ Module 02 - CSS
 Module 03 - JavaScript
 
 Module 04 - Flask, Database, NodeJS, API
+
+"Modules after 4 are post-course studies"
+
+Module 05 - Typescript
+
+Module 06 - Module 06 - Modern JavaScript (ES6)
+
+Module 07 - Node + Express + NPM + MongoDb
 ```
 
 ## How it works
