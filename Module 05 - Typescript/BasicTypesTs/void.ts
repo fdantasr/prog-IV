@@ -16,3 +16,5 @@ const pessoa = {
  /* Se eu usar console.log Irá retornar Felipe Dantas e undefined pois ele também retorna o valor de retorno da função
 console.log(pessoa.exibirNome());*/
 pessoa.exibirNome();
+
+export default 1;
